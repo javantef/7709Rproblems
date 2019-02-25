@@ -34,3 +34,18 @@ avg_moves <- mean(count)
 print(avg_moves)
 ```
 
+### Javante Foster's Code
+
+```{r}
+m<-0
+n<-0
+z<-0
+for(i in 1:1000)
+while(m<25){
+  n<-n+1
+  m<-m+sample(c(1:6),1)
+}
+z[i]<-n
+mean(n)
+```
+
