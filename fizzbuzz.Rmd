@@ -46,3 +46,21 @@ for(i in 1:100){
 print(answer)
 ```
 
+### Javante Foster's Code
+
+```{r}
+a<-c(1:100)
+
+z<-seq(3,100, by=3)
+a[z]<-'FIZZ'
+
+y<-seq(5,100, by=5)
+a[y]<-'BUZZ'
+
+x<-seq(15,100, by=15)
+a[x]<-'FIZZBUZZ'
+
+a
+```
+
+

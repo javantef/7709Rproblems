@@ -97,9 +97,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -107,74 +104,14 @@ summary {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
 </script>
 
 <!-- code folding -->
+
 
 
 
@@ -223,6 +160,38 @@ for(i in 1:100){
   if(i%%5 == 0 &amp; i%%3 ==0) answer[i] &lt;-&quot;fizzbuzz&quot;
 }
 print(answer)</code></pre>
+</div>
+<div id="javante-fosters-code" class="section level3">
+<h3>Javante Foster’s Code</h3>
+<pre class="r"><code>a&lt;-c(1:100)
+
+z&lt;-seq(3,100, by=3)
+a[z]&lt;-'FIZZ'
+
+y&lt;-seq(5,100, by=5)
+a[y]&lt;-'BUZZ'
+
+x&lt;-seq(15,100, by=15)
+a[x]&lt;-'FIZZBUZZ'
+
+a</code></pre>
+<pre><code>##   [1] &quot;1&quot;        &quot;2&quot;        &quot;FIZZ&quot;     &quot;4&quot;        &quot;BUZZ&quot;     &quot;FIZZ&quot;    
+##   [7] &quot;7&quot;        &quot;8&quot;        &quot;FIZZ&quot;     &quot;BUZZ&quot;     &quot;11&quot;       &quot;FIZZ&quot;    
+##  [13] &quot;13&quot;       &quot;14&quot;       &quot;FIZZBUZZ&quot; &quot;16&quot;       &quot;17&quot;       &quot;FIZZ&quot;    
+##  [19] &quot;19&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;     &quot;22&quot;       &quot;23&quot;       &quot;FIZZ&quot;    
+##  [25] &quot;BUZZ&quot;     &quot;26&quot;       &quot;FIZZ&quot;     &quot;28&quot;       &quot;29&quot;       &quot;FIZZBUZZ&quot;
+##  [31] &quot;31&quot;       &quot;32&quot;       &quot;FIZZ&quot;     &quot;34&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;    
+##  [37] &quot;37&quot;       &quot;38&quot;       &quot;FIZZ&quot;     &quot;BUZZ&quot;     &quot;41&quot;       &quot;FIZZ&quot;    
+##  [43] &quot;43&quot;       &quot;44&quot;       &quot;FIZZBUZZ&quot; &quot;46&quot;       &quot;47&quot;       &quot;FIZZ&quot;    
+##  [49] &quot;49&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;     &quot;52&quot;       &quot;53&quot;       &quot;FIZZ&quot;    
+##  [55] &quot;BUZZ&quot;     &quot;56&quot;       &quot;FIZZ&quot;     &quot;58&quot;       &quot;59&quot;       &quot;FIZZBUZZ&quot;
+##  [61] &quot;61&quot;       &quot;62&quot;       &quot;FIZZ&quot;     &quot;64&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;    
+##  [67] &quot;67&quot;       &quot;68&quot;       &quot;FIZZ&quot;     &quot;BUZZ&quot;     &quot;71&quot;       &quot;FIZZ&quot;    
+##  [73] &quot;73&quot;       &quot;74&quot;       &quot;FIZZBUZZ&quot; &quot;76&quot;       &quot;77&quot;       &quot;FIZZ&quot;    
+##  [79] &quot;79&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;     &quot;82&quot;       &quot;83&quot;       &quot;FIZZ&quot;    
+##  [85] &quot;BUZZ&quot;     &quot;86&quot;       &quot;FIZZ&quot;     &quot;88&quot;       &quot;89&quot;       &quot;FIZZBUZZ&quot;
+##  [91] &quot;91&quot;       &quot;92&quot;       &quot;FIZZ&quot;     &quot;94&quot;       &quot;BUZZ&quot;     &quot;FIZZ&quot;    
+##  [97] &quot;97&quot;       &quot;98&quot;       &quot;FIZZ&quot;     &quot;BUZZ&quot;</code></pre>
 </div>
 
 
