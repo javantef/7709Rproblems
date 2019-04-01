@@ -37,15 +37,18 @@ print(avg_moves)
 ### Javante Foster's Code
 
 ```{r}
+p<-c()
+for(i in 1:1000){
 m<-0
 n<-0
-z<-0
-for(i in 1:1000)
 while(m<25){
   n<-n+1
-  m<-m+sample(c(1:6),1)
+  m<-m + sample(c(1:6),1)
 }
-z[i]<-n
-mean(n)
+p[i]<-c(n)
+}
+p
+
+mean(p)
 ```
 
